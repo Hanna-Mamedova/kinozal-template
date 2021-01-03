@@ -14,3 +14,125 @@
         width: 100%;
     }
 }
+
+.user-login {
+    position: relative;
+
+    &__tabs {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        border: none;
+
+        a {
+            padding: 14px 5px 11px !important;
+            color: $color-gray;
+            border: none !important;
+            background-color: transparent !important;  
+        }
+
+        .active a {
+            color: $color-light !important;
+        }
+    }
+}
+
+.site-news-item {
+    clear: both;
+    position: relative;
+
+    &:not(:last-child) {
+        min-height: 85px;
+        margin-bottom: $gap;
+
+        &::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: -5px;
+            width: calc(100% - 85px);
+            height: 1px;
+            background-color: $color-gray;
+        }
+    }
+
+    &:hover {
+        a {
+            color: $color-accent;
+        }
+
+    .thumbnail {
+        border-color: $color-accent;
+        background-color: $color-accent;
+    }
+    }
+
+    &__image {
+        float: left;
+        width: 75px;
+        margin: 0 10px 10px 0;
+    }
+
+    &__date {
+        font-size: 0.8rem;
+        text-align: right;
+        color: darken($color-gray, 30%);
+    }
+
+    &__title {
+        margin-bottom: 10px;
+        
+        a {
+            transition: color 0.25s;
+            @include block-shortener(1rem, 1.5, 50px, 2);
+        }
+    }
+}
+
+.top-films {
+    &__body {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    &__list {
+        margin-bottom: 0;
+    }
+
+    &__item {
+        margin-right: -1px;
+        margin-left: -1px;
+        background-color: transparent;
+        padding-right: 55px;
+        color: $color-primary !important;
+
+        &:first-child {
+            border-top: none;
+            border-radius: 0;
+        }
+
+        &:last-child {
+            border-radius: 0;
+            border-bottom: none;
+        }
+
+        &:hover,
+        &:focus {
+            background-color: $color-accent !important;
+            background-color: $color-accent;
+            color: $color-light !important;
+
+            .badge {
+                background-color: $color-dark;
+            }
+        }
+    }
+
+    &__badge {
+        position: absolute;
+        right: $gap;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+}

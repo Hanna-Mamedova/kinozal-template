@@ -5,15 +5,38 @@ html {
 body {
     font-size: 1rem;
     font-family: $font-main;
-    overflow-y: scroll;
 }
 
 h1 {
     font-family: $font-header;
+    @include xs-min {
+        margin: (-$gap / 2) 0 ($gap * 3) 0;
+        font-size: 3rem;
+    }
+    @include xs {
+        margin: 0 0 ($gap * 2) 0;
+        font-size: 2rem;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        border-bottom: 3px solid $color-accent;
+        margin: 0.85em 0 0 15px;    
+    }
 }
 
 h2 {
     font-family: $font-header;
+    @include xs-min {
+        margin: ($gap * 4) 0 ($gap * 3) 0;
+        font-size: 2.5rem;
+    }
+    @include xs {
+        margin: 0 0 ($gap * 2) 0;
+        font-size: 2rem;
+    }
 }
 
 h3 {
@@ -27,4 +50,9 @@ a {
     &:focus {
         text-decoration: none;
     }
+}
+
+section {
+    position: relative;
+    overflow: hidden;
 }
