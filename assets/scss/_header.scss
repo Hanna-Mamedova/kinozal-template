@@ -1,8 +1,7 @@
 .header {
 @extend %margin-bottom-lg;
-}
 
-.header-logo {
+&-logo {
     text-align: center;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -37,4 +36,5 @@
         font-size: 1.15rem;
         @extend %text-shadow;
     }
+}
 }

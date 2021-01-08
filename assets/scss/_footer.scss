@@ -1,0 +1,7 @@
+.footer {
+    @extend %margin-bottom-lg;
+    
+    background-color: $color-dark;
+    width: 100%;
+    height: 100px;
+}
