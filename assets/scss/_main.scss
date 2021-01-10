@@ -55,6 +55,9 @@
 .film-news {
 
     &-item {
+        transition: background-color 0.25s;
+
+
         &:hover {
         h3>a {
             color: $color-accent;

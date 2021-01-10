@@ -1,4 +1,4 @@
-.header, .main, .left-sidebar, .footer {
+.header, .main, .left-sidebar {
   margin-bottom: 80.0px;
 }
 
@@ -110,6 +110,11 @@ h2::after {
   margin: 0.85em 0 0 15px;
 }
 
+h4 {
+  color: #ffffff;
+  font-size: 18px;
+}
+
 a {
   color: #165690;
 }
@@ -121,6 +126,10 @@ a:hover, a:focus {
 section {
   position: relative;
   overflow: hidden;
+}
+
+ul {
+  list-style: none;
 }
 
 .header-logo {
@@ -202,6 +211,12 @@ section {
      text-overflow: ellipsis;
 }
 
+.film-news-item {
+  -webkit-transition: background-color 0.25s;
+  -o-transition: background-color 0.25s;
+  transition: background-color 0.25s;
+}
+
 .film-news-item:hover h3 > a {
   color: #df8a13;
 }
@@ -234,6 +249,62 @@ section {
   -webkit-transition: background-color 0.25s;
   -o-transition: background-color 0.25s;
   transition: background-color 0.25s;
+}
+
+.film-info {
+  font-size: 1.2em;
+}
+
+.film-info .badge {
+  font-size: 0.8em;
+}
+
+.film-info-video {
+  border: 1px solid #dddddd;
+  border-radius: 4px 4px 0 0;
+}
+
+.film-info-rate {
+  padding: 19px;
+  margin-bottom: 20px;
+  min-height: 20px;
+  border: 1px solid #dddddd;
+  border-radius: 0 0 4px 4px;
+  border-top: 0;
+  background-color: #eeeeee;
+}
+
+.film-info-rate__wrapper:not(:last-child) {
+  margin-right: 15px;
+}
+
+.film-reviews-head {
+  color: #ffffff;
+  background-color: #df8a13;
+  border: none;
+  font-size: 1.2rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 0;
+  border-radius: 4px 4px 0 0;
+  padding: 10px 15px 10px 15px;
+}
+
+.film-reviews-comment:first-of-type {
+  margin-bottom: 30px;
+}
+
+.film-reviews-body {
+  border-radius: 0 0 4px 4px;
+  background-color: #ebebeb;
+  padding: 15px;
+}
+
+.film-comment-form__btn {
+  float: right;
+}
+
+.film-comment-form__textarea {
+  margin-bottom: 15px;
 }
 
 .left-sidebar .panel:last-of-type {
@@ -377,8 +448,27 @@ section {
 
 .footer {
   background-color: #232323;
-  width: 100%;
-  height: 100px;
+  padding-top: 45px;
+}
+
+.footer a {
+  color: gray;
+}
+
+.footer a:hover {
+  color: #ffffff;
+}
+
+.footer-bottom {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  font-family: "PT Sans", sans-serif;
+  font-weight: bold;
+}
+
+.footer-bottom a {
+  color: #ffffff;
 }
 
 @media (min-width: 576px) {

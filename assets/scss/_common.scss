@@ -55,6 +55,11 @@ h2 {
     }
 }
 
+h4 {
+    color: $color-light;
+    font-size: $font-size*1.125;
+}
+
 a {
     color: $color-primary;
 
@@ -67,4 +72,8 @@ a {
 section {
     position: relative;
     overflow: hidden;
+}
+
+ul {
+    list-style: none;
 }
