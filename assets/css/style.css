@@ -97,9 +97,10 @@ h2 {
 h2::before {
   content: "";
   position: absolute;
+  left: 0;
   width: 30px;
-  border-top: 3px solid #f4c37e;
-  margin: 0.25em 0 0 -45px;
+  border-bottom: 3px solid #f4c37e;
+  margin: 0.25em 0 0 0;
 }
 
 h2::after {
@@ -272,6 +273,10 @@ ul {
   border-radius: 0 0 4px 4px;
   border-top: 0;
   background-color: #eeeeee;
+}
+
+.film-info-rate__wrapper {
+  white-space: nowrap;
 }
 
 .film-info-rate__wrapper:not(:last-child) {
@@ -517,8 +522,8 @@ ul {
     font-size: 2rem;
   }
   h2 {
-    margin: 0 0 30px 30px;
-    font-size: 2rem;
+    margin: 45px 0 30px 45px;
+    font-size: 1.75rem;
   }
   .header-logo__title {
     font-size: 2.5rem;
